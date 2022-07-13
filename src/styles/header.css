@@ -1,0 +1,48 @@
+.header-container{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin: 0 auto;
+
+}
+
+.menu-mobile-btn{
+    display: none;
+}
+.header-nav{
+    transition: 150ms all;
+}
+
+.header-sign-in-btn{
+    padding: .5rem 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.nav-list li{
+    position: relative;
+}
+
+.nav-list a{
+    padding: 1.5rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.exit-nav-mobile{
+    cursor: pointer;
+}

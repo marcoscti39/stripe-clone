@@ -1,0 +1,32 @@
+.menu-mobile-container{
+    background-color: white;
+    width: 85%;
+    height: 90%;
+    position: relative;
+    padding: 3rem 1.5rem;
+
+
+}
+.mobile-menu-category{
+    display: block;
+    margin: 1rem 0;
+
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.mobile-menu-item{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+.mobile-menu-links{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    
+}
+
+.mobile-menu-links a{
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+}

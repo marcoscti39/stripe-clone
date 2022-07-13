@@ -1,0 +1,129 @@
+.hero {
+  display: grid;
+  grid-template-columns: 3.3fr 2fr;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 5.5rem;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 800;
+  line-height: 1em;
+}
+
+.hero-text {
+  line-height: 2.1rem;
+  font-size: 1.25rem;
+  color: rgb(85, 85, 85);
+  margin-top: 2.4rem;
+}
+
+.hero-start-btn {
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1.4rem;
+}
+
+.hero-img {
+  margin: 0 auto;
+}
+
+@media (max-width: 1045px){
+  .hero-title{
+    font-size: 3rem;
+  } 
+  .hero-img img{
+    height: 95%;
+    width: 95%;
+  }
+}
+
+@media (max-width: 800px){
+  .hero-img{
+    display: none;
+  }
+  .hero{
+    grid-template-columns: minmax(100px, 400px);
+
+  }
+
+}
+
+@media (max-width: 620px){
+  .nav-list{
+    display: none;
+
+  }
+  .header-container .menu-mobile-btn{
+    display: block;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    line-height: 0;
+    padding: .2rem .5rem;
+    cursor: pointer;
+  }
+
+  .header-sign-in-btn{
+    display: none;
+  }
+
+  
+
+  .header-nav.nav-mobile{
+    transform: scale(0);
+  
+    display: grid;
+    place-items: center;
+    position: absolute;
+    z-index: 10;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .header-nav.nav-mobile.active{
+    transform: scale(1);
+  }
+
+  .header-nav.nav-mobile .nav-list{
+    background-color: white;
+    width: 85%;
+    height: 90%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .header-nav.nav-mobile .nav-list a{
+    color: black;
+  }
+
+  .exit-nav-mobile{
+    font-size: 2rem;
+    position: absolute;
+    right: .8rem;
+    top: .8rem;
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+  }
+
+
+  
+}
+
+@media (min-width: 620px){
+  .menu-mobile-container{
+    display: none;
+    
+  }
+}
